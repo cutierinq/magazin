@@ -1,0 +1,628 @@
+/* оптимизация фулл */
+body{
+	background: linear-gradient(to bottom, #ffffff 60%, rgb(23, 23, 23) 100%);
+}
+.active {
+	
+	background-color: ghostwhite;
+		
+	font-weight: bold;
+	}
+	ul li, a {
+		list-style-type: none;
+		text-decoration: none;
+		color: #959595;
+	}
+	.navbar{
+		background-color: white;
+		opacity: 0.9;
+	}
+	/* оптимизация моб*/
+	@media (max-width: 767px){
+		.caption{
+	text-align: center;
+		}
+		div.caption p {
+	font-size: 10px;
+		}
+		div.caption h4 {	
+	font-weight: bold;	
+	text-transform: uppercase;
+	font-size: 14px;
+		}
+		.womenHome.shoes{
+	padding: 1.5em;
+		}
+		.womenHome.shoes img {
+		margin-left: 0.5em;
+		}
+		.womenElements{
+			
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+		}
+		.womenHome img {
+	width: 100%;
+	height: 100%;
+		}
+		.womenHome{
+	width: 80%;
+	box-shadow: none;
+	border: 0px none;
+		}
+		.navbar-header{
+		background-color: white;
+		}
+		.navbar-nav{
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+		.nav>li, .navbar-nav .open .dropdown-menu>li>a {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.34);
+			text-align: center;
+			font-stretch: expanded;
+			color: #000000;
+		}
+		.navbar-toggle{
+		}
+		.navbar-brand > img{
+		height: 1.7em;
+		}
+		.navbar-brand{
+		}
+		.menu{
+	position: absolute;
+	text-align: left;
+			
+	margin-left: 1.3em;
+			
+	bottom: 10em;
+		}
+		.menuItems{
+			
+	font-size: 4rem;
+			
+	margin-left: -1em;
+			
+	font-weight: bold;
+			
+	line-height: 110%;
+		}
+		.brandName{
+			
+	position: absolute;
+			
+	top: 0;
+			
+	right: 1em;
+		}
+		.homeImage{
+			position: absolute;
+			width: 90%;
+			overflow: hidden;
+			display: flex;
+			align-self: center;
+		}
+		.homeImage img {
+			
+	margin: auto;
+			
+	width: 100%;
+			
+	overflow: hidden;
+			
+	position: fixed;
+			
+	padding: 1em;
+		}
+		.homeElements{
+		margin: auto;
+		width: 100%;
+		overflow: hidden;
+		}
+	
+	}
+	@media (min-width: 768px) and (max-width: 910px){
+		
+		.navbar-header {
+		  float: none !important;
+		  display: block !important;
+	  }
+	  .navbar-left {
+		  float: left!important;
+	  }
+	  .navbar-toggle {
+		  display: inline-block;
+		  float: right !important;
+		  position: relative;
+	  }
+	  .navbar-collapse {
+		  border-top: 1px solid transparent;
+		  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+	  }
+	  .navbar-fixed-top {
+		  top: 0;
+		  border-width: 0 0 1px;
+	  }
+	  .navbar-collapse.collapse {
+		  display: none!important;
+	  }
+	  .navbar-nav {
+		  float: none !important;
+		  margin-top: 7.5px;
+	  }
+	  .navbar-nav>li {
+		  float: left;
+	  }
+	  .navbar-nav>li>a {
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+	  }
+	  .collapse.in{
+		  display:block !important;
+	  }
+	}
+	@media (min-width: 768px) and (max-width: 1023px){
+			.caption{
+			
+	text-align: center;
+		}
+		div.caption p {
+			
+	font-size: 10px;
+		}
+		div.caption h4 {
+			
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+		}
+		.womenHome.shoes{
+	padding: 1.5em;
+		}
+		.womenHome.shoes img {
+		margin-left: 0.5em;
+		}
+		.womenElements{
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+		.womenHome img {
+	width: 100%;
+	height: 100%;
+		}
+		.womenHome{
+	width: 80%;
+	box-shadow: none;
+	border: 0px none;
+		}
+		.navbar-header{
+		background-color: white;
+		display: flex;
+		flex-flow: row nowrap;
+		}
+		.navbar-nav{
+			background-color: rgba(255, 255, 255, 0.9);
+			display: inline-block;
+			float: right;
+			text-align: center;
+		}
+		.nav>li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align: center;
+			font-stretch: expanded;
+			color: #c2b3ab;
+		}
+		.navbar-toggle{
+		}
+		.navbar-brand > img{
+		height: 1.7em;
+		}
+		.navbar-brand{
+		}
+		.menu{
+			
+	position: absolute;
+	text-align: left;	
+	margin-left: 1.3em;	
+	bottom: 10em;
+		}
+		.menuItems{	
+	font-size: 4rem;	
+	margin-left: -1em;		
+	font-weight: bold;	
+	line-height: 110%;
+		}
+		.brandName{	
+	position: absolute;	
+	top: 0;	
+	right: 1em;
+		}
+		.homeImage{
+			position: fixed;
+			width: 100%;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			height: 100%;
+		}
+		.homeImage img {	
+	margin: auto;	
+	width: 100%;
+	overflow: hidden;	
+	padding: 5em;
+		}
+		.homeElements{
+		margin: auto;
+		width: 100%;
+		overflow: hidden;
+		}
+	}
+	@media (min-width: 1024px){
+		.lookbook{
+		}
+	.womenHome.thumbnail.lookbook img {
+	}
+			.caption{
+	text-align: center;
+		}
+		div.caption p {
+	font-size: 10px;
+		}
+		div.caption h4 {
+			
+	font-weight: bold;
+			
+	text-transform: uppercase;
+			
+	font-size: 14px;
+		}
+		.womenHome.shoes{
+			
+	padding: 1.5em;
+		}
+		.womenHome.shoes img {
+		margin-left: 0.5em;
+		}
+		.womenElements{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			max-width: 1900px;
+		}
+		.womenHome img {
+			width: 100%;
+			height: 100%;
+		}
+		.womenHome{
+			width: 80%;
+			box-shadow: none;
+			border: 0px none;
+			width: 400px;
+			height: 100%;
+		}
+	
+		.navbar-header{
+		background-color: white;
+		display: flex;
+		flex-flow: row nowrap;
+		}
+		
+		.navbar-nav{
+			background-color: rgba(255, 255, 255, 0.9);
+			display: inline-block;
+			float: right;
+			text-align: center;
+		}
+		.nav>li, .navbar-nav .open .dropdown-menu>li>a {
+			text-align: center;
+			font-stretch: expanded;
+			color: #000000;
+		}
+		.navbar-toggle{
+		}
+		.navbar-brand > img{
+		height: 1.7em;
+		}
+		.navbar-brand{
+		}
+		.menu{
+			
+	position: absolute;		
+	text-align: left;		
+	margin-left: 1.3em;
+	bottom: 10em;
+		}
+		.menuItems{	
+	font-size: 4rem;	
+	margin-left: -1em;	
+	font-weight: bold;
+	line-height: 110%;
+		}
+		.brandName{
+			
+	position: absolute;
+			
+	top: 0;
+			
+	right: 1em;
+		}
+		.homeImage{
+			/* position: fixed; */
+			width: 100%;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			height: 100%;
+		}
+		.homeImage img {
+			margin: auto;
+			width: 100%;
+			overflow: hidden;
+			padding: 3em;
+		}
+		.homeElements{
+		margin: auto;
+		margin-top: 4em;
+		width: 100%;
+		overflow: hidden;
+		}
+	}
+	.video-container {
+		position: absolute;
+		top: auto;
+		bottom: auto;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	  }
+	  .video-container video {
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	  }
+	 
+    
+
+   
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* задает полупрозрачный черный цвет фона */
+        color: white; /* цвет текста */
+        opacity: 0; /* начальная непрозрачность, чтобы текст был скрыт */
+        transition: opacity 0.3s ease; /* плавный переход */
+    }
+
+    .container:hover .overlay {
+        opacity: 1; /* при наведении показываем текст с фоном */
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+	}
+
+	
+	.thumbnail {
+		text-align: center;
+		display: inline-block;
+		overflow: hidden;
+		position: relative;
+		text-decoration: none;
+		}
+		.thumbnail:before {
+		display: block;
+		background-color: rgba(92, 92, 92, 0.473);
+		content: "";
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		}
+		
+		.thumbnail:after {
+		font-family: 'Tahoma';
+		color: white;
+		content: attr(alt);
+		display: block;
+		font-size: 16px;
+		opacity: 0;
+		padding: 0 3%;
+		position: absolute;
+		text-transform: none;
+		top: 50%;
+		-webkit-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		-webkit-transform: scale(0) translateY(-50%);
+		transform: scale(0) translateY(-50%);
+		width: 94%;
+		z-index: 3;
+		}
+		
+		.thumbnail img {
+		border: none;
+		display: block;
+		z-index: 1;
+		}
+
+		.thumbnail:hover:before {
+		opacity: 0.6;
+		}
+		
+		.thumbnail:hover:after {
+		opacity: 1;
+		-webkit-transform: scale(1) translateY(-50%);
+		transform: scale(1) translateY(-50%);
+		}
+
+		.text-container {
+			width: 100%; /* Ширина контейнера */
+			margin-top: 720px; /* Центрирование по горизонтали */
+			height: 550px;
+			padding: 0px; /* Поля вокруг текста */
+			background-color: #070707; /* Цвет фона */
+		}
+
+		h1{
+		color:aqua;
+		font-family: 'Tahoma';
+		font-weight: 400;
+		background-position: center center;
+		border-color: transparent;
+		border-style: solid;
+		font-size: 36px;
+		line-height: 36px;
+		color: white;
+		padding: 10px;
+		}
+		.text-container p {
+			width: 50%;
+		font-family: 'Tahoma';
+		font-weight: 400;
+		background-position: center center;
+		border-color: transparent;
+		border-style: solid;
+		font-size: 28px;
+		line-height: 28px;
+		color: white;
+		padding: 10px;
+		}
+		.text-container img {
+			width: 100%; 
+			display: block; 
+		}
+
+		.irina{
+			width: 15%;
+			position: absolute;
+			margin-top: -400px;
+			margin-left:840px;
+		} 
+		.ken{
+			width: 15%;
+			position: absolute;
+			margin-top: -340px;
+			margin-left:1150px;
+		} 
+		
+		  
+		  .footer {
+			position: absolute;
+			bottom: -1350px;
+			left: 0;
+			right: 0;
+			padding: 40px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .footerwhite {
+			position: absolute;
+			bottom: -1100px;
+			left: 0;
+			right: 0;
+			padding: 40px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .footerwhitecollect {
+			position: absolute;
+			bottom: -2480px;
+			left: 0;
+			right: 0;
+			padding: 30px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .footerwhitewomen {
+			position: absolute;
+			bottom: -1950px;
+			left: 0;
+			right: 0;
+			padding: 30px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .footerwhitemen {
+			position: absolute;
+			bottom: -2600px;
+			left: 0;
+			right: 0;
+			padding: 30px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .footerwhitewal {
+			position: absolute;
+			bottom: -1800px;
+			left: 0;
+			right: 0;
+			padding: 30px;
+			background: rgb(23, 23, 23);
+			color: rgb(94, 94, 94);
+			text-align: center;
+			font-size: 15px;
+		  }
+		  .btn-up {
+			position: fixed;
+			/* цвет фона */
+			background-color: #d0d0d0;
+			/* расстояние от правого края окна браузера */
+			right: 20px;
+			/* расстояние от нижнего края окна браузера */
+			bottom: 20px;
+			/* скругление верхнего левого угла */
+			border-top-left-radius: 25px;
+			/* скругление верхнего правого угла */
+			border-top-right-radius: 25px;
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+		  }
+		  
+		  .btn-up::before {
+			content: "";
+			width: 40px;
+			height: 40px;
+			background: transparent no-repeat center center;
+			background-size: 80% 80%;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+		  }
+		  
+		  .btn-up_hide {
+			display: none;
+		  }
+		  
+		  @media (hover: hover) and (pointer: fine) {
+			.btn-up:hover {
+			  background-color: #161616; 
+			}
+		  }
